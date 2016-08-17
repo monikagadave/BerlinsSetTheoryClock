@@ -25,7 +25,8 @@ public class ClockTest {
                 .append("\nYY..")
                 .append("\n----------")
                 .append("\nYYRY.......")
-                .append("\nYYY.").toString();
+                .append("\nYYY.")
+                .append("\n").toString();
         assertEquals(expectedResult, clock.getClockRepresentation(new String[] {"12:23","and" ,"33"," seconds"}));
 
         expectedResult = new StringBuilder("\n  Y")
@@ -33,7 +34,8 @@ public class ClockTest {
                 .append("\nYYY.")
                 .append("\n----------")
                 .append("\nYYRYYRYYRYY")
-                .append("\nYYY.").toString();
+                .append("\nYYY.")
+                .append("\n").toString();
 
         assertEquals(expectedResult, clock.getClockRepresentation(new String[] {"23:58","and" ,"20"," seconds"}));
     }
