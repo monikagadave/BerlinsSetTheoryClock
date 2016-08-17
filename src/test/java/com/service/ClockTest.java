@@ -22,7 +22,7 @@ public class ClockTest {
     public void shouldGetClockRepresentation(){
         String expectedResult = new StringBuilder("\n  .")
                 .append("\nRR..")
-                .append("\nYY..")
+                .append("\nRR..")
                 .append("\n----------")
                 .append("\nYYRY.......")
                 .append("\nYYY.")
@@ -31,7 +31,7 @@ public class ClockTest {
 
         expectedResult = new StringBuilder("\n  Y")
                 .append("\nRRRR")
-                .append("\nYYY.")
+                .append("\nRRR.")
                 .append("\n----------")
                 .append("\nYYRYYRYYRYY")
                 .append("\nYYY.")

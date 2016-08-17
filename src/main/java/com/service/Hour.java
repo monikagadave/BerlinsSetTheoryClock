@@ -15,7 +15,7 @@ public class Hour implements TimeRepresenter{
     protected StringBuilder getHourRepresentationInSingle(int number) {
         StringBuilder value = new StringBuilder(UNLIT_HOURS_OR_MINUTES);
         for(int i=0; i< number % FIVE; i++){
-            value = value.replace(i , i + 1, YELLOW);
+            value = value.replace(i , i + 1, RED);
         }
         return value;
     }
